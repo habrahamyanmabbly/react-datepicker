@@ -2,6 +2,8 @@ import React, { createRef } from "react";
 import PropTypes from "prop-types";
 import { clsx } from "clsx";
 import { getYear } from "./date_utils";
+import { IconArrowUp } from "./arrow_up";
+import { IconArrowDown } from "./arrow_down";
 
 function generateYears(year, noOfYear, minDate, maxDate) {
   const list = [];
@@ -104,7 +106,7 @@ export default class YearDropdownOptions extends React.Component {
           key={"upcoming"}
           onClick={this.incrementYears}
         >
-          <a className="react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation--years-upcoming" />
+          <IconArrowUp />
         </div>,
       );
     }
@@ -116,7 +118,7 @@ export default class YearDropdownOptions extends React.Component {
           key={"previous"}
           onClick={this.decrementYears}
         >
-          <a className="react-datepicker__navigation react-datepicker__navigation--years react-datepicker__navigation--years-previous" />
+          <IconArrowDown />
         </div>,
       );
     }

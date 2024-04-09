@@ -612,9 +612,12 @@
 
     .react-datepicker__navigation--years-upcoming {
       border-bottom-color: darken($datepicker__muted-color, 10%);
+      background: red;
     }
 
     .react-datepicker__navigation--years-previous {
+      background: red;
+
       border-top-color: darken($datepicker__muted-color, 10%);
     }
   }
